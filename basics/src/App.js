@@ -2,7 +2,7 @@ import React from 'react';
 
 const Title = () =>{
   return (
-    <h1>Ben Vindo ao React</h1>
+    <h1>Bem Vindo ao React</h1>
   )
 }
 
