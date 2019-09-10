@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title> Pagina de Testes JS </title>
+    </head>
+    <body>
+        <div class="app">
+            <h1>Bem vindo ao mundo JS</h1>
+            <h2 id="demo"></h2>
+        </div>
+        <script>
+
+            var  carName = 'Volvo';
+
+            var x = 50;
+
+            var number1 = 5;
+            var number2  = 10;
+
+            document.getElementById("demo").innerHTML = x;
+
+            var obj  = {
+                rua: "Alto da Boa Vista",
+                numero: 183,
+                bairro: "Ponta Negra",
+                cidade: "Natal",
+                uf: "RN"
+            };
+
+            function retonaEndereco(obj){
+             return "o usuario mora em "+ obj.cidade+"/"+
+                obj.uf +", na rua "+ obj.rua +", " + obj.numero;
+            };
+
+            function verificaPares(inicio, fim){
+                var inicio = inicio;
+                var fim = fim;
+                var retorno = [];
+                for (var i = inicio; i <= fim; i++) {
+                    if(i%2 == 0 ){ 
+                        retorno.push(i);  
+                    }               
+                }
+                return retorno;
+            }
+
+            function temSkill(skill){
+                var skill = skill;
+                var skills = ["react", "Mongo", "Javascript"];
+                var retorno;
+                for ( var i = 0; i < skills.length; i++){
+                    if (skills[i] == "Mongo"){
+                        retorno =  true;
+                    }else{
+                        retorno = false;
+                    }   
+                }
+                return retorno;
+
+            }
+
+            console.log(retonaEndereco(obj));
+
+            var pares = verificaPares(10,20);
+            console.log(pares);
+
+            console.log(temSkill("Mongo"));
+
+        </script>
+    </body>
+</html>
